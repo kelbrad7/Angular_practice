@@ -1,6 +1,11 @@
 <div class = "container">
-<button class = "btn btn-primary" (click)="showText = !showText">Display Details</button>
+<!--<button class = "btn btn-primary" (click)="showText = !showText">Display Text</button>-->
+<button class = "btn btn-primary" (click)="onToggleText()">Display Text</button>
 <p *ngIf = "showText">I Love Dogs!</p>
+<div *ngFor = "let logItem of log"
+[ngStyle] = "{backgroundColor: logItem >= 5 ? 'blue': 'transparent'}"
+[ngClass]= "{'white-text' : logItem>=5}">
+ {{logItem}}</div>
 
 
 </div>
