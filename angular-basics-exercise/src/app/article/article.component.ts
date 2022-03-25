@@ -16,5 +16,7 @@ export class ArticleComponent implements OnInit {
 
   isTechRelated: boolean = true;
 
-  changeColor() {this.isTechRelated = !this.isTechRelated};
+  changeColor = () => this.isTechRelated = !this.isTechRelated;
+
 }
+
