@@ -1,5 +1,14 @@
-<div class="container"></div>
+<div class="container">
 
 <h1 [ngStyle]="{'background-color': isTechRelated ? 'yellow':'blue'}"> {{title}}</h1>
+<button class = "btn btn-primary" (click)="changeColor()">Change Color
+</button>
+<br>
 
-<p>{{content}}</p>
+<p *ngIf = "isTechRelated; else notTechRelated">
+{{content}}</p>
+
+<br>
+<ng-template #notTechRelated>Not tech related.</ng-template>
+
+</div>
