@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'basic-event-binding-exercise';
-  message: string = "Happy Birthday Molly Kate"
-  consoleBtn = () => console.log(this.message);
+  title = 'dynamic-button-event-binding';
+  isDisabled: boolean = true;
+  changeDisabled = () => this.isDisabled = !this.isDisabled;
 }
