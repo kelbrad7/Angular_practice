@@ -1,0 +1,7 @@
+<p *ngIf="isShowContent; else notShowContent">If isShowContent is true, show me!</p>
+
+<ng-template #notShowContent>
+  <p>else, show me</p>
+</ng-template>
+
+<button (click) = "changeShowContent()" class="btn btn-primary">click</button>
