@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "basic-ngif-else-exercise": {
+    "basic-ngStyle-exercise": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:class": {
@@ -38,7 +38,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/basic-ngif-else-exercise",
+            "outputPath": "dist/basic-ng-style-exercise",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -50,7 +50,6 @@
             "styles": [
               "src/styles.css",
               "node_modules/bootstrap/dist/css/bootstrap.min.css"
-
             ],
             "scripts": []
           },
@@ -91,10 +90,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "basic-ngif-else-exercise:build:production"
+              "browserTarget": "basic-ngStyle-exercise:build:production"
             },
             "development": {
-              "browserTarget": "basic-ngif-else-exercise:build:development"
+              "browserTarget": "basic-ngStyle-exercise:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -102,7 +101,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "basic-ngif-else-exercise:build"
+            "browserTarget": "basic-ngStyle-exercise:build"
           }
         },
         "test": {
@@ -125,5 +124,5 @@
       }
     }
   },
-  "defaultProject": "basic-ngif-else-exercise"
+  "defaultProject": "basic-ngStyle-exercise"
 }

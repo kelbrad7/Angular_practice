@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'basic-ngif-else-exercise';
-  isShowContent: boolean= true;
-
+  title = 'dynamcially-change-content-ngstyle-exercise';
+  changeColor: string = 'green'
+  colorFunction = (event:any) => this.changeColor = event.target.value
 }
