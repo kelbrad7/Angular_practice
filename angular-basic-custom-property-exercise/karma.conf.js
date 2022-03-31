@@ -25,7 +25,7 @@ module.exports = function (config) {
       suppressAll: true // removes the duplicated traces
     },
     coverageReporter: {
-      dir: require('path').join(__dirname, './coverage/create-nested-components'),
+      dir: require('path').join(__dirname, './coverage/angular-basic-custom-property-exercise'),
       subdir: '.',
       reporters: [
         { type: 'html' },
