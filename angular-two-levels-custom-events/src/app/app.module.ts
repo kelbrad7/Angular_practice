@@ -1,22 +1,20 @@
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
-import { NavbarComponent } from './navbar/navbar.component';
+import { BookshelfComponent } from './bookshelf/bookshelf.component';
+import { BookshelfListComponent } from './bookshelf/bookshelf-list/bookshelf-list.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    NavbarComponent
+    BookshelfComponent,
+    BookshelfListComponent
   ],
   imports: [
-    BrowserModule,
-    FormsModule
+    BrowserModule
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { 
-  
-}
+export class AppModule { }
