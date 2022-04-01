@@ -6,11 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-   users: 
+   users:
     {
       username: string,
       id: number
-    } [] = 
+    }  [] =
     [
     { username: 'Kelly',  id: 1  },
     { username: 'Joel',   id: 2  },

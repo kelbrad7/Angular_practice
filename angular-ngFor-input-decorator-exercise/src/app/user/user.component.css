@@ -1,0 +1,13 @@
+.card{
+  color: rgb(231, 73, 99);
+  min-width: 100px;
+  margin: 5px;
+
+
+}
+
+.card-body {
+  justify-content: center;
+  align-content: center;
+
+}
