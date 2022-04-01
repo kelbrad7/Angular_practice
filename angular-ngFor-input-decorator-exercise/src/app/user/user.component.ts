@@ -7,8 +7,7 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./user.component.css']
 })
 export class UserComponent implements OnInit {
-  @Input() inputUser;
-
+  @Input() inputUser: {username: "", id: number};
 
   constructor() { }
 
