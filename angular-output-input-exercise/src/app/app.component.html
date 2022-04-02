@@ -1,1 +1,3 @@
-<app-navbar></app-navbar>
+<app-navbar (emitSearchInput)="assignSearchInput($event)"></app-navbar>
+
+<app-search-page *ngIf = "emittedUserInput" [receivedUserInput]="emittedUserInput" ></app-search-page>

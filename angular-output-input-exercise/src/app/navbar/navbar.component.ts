@@ -1,4 +1,4 @@
-import { Component, Input, OnInit, EventEmitter } from '@angular/core';
+import { Component, Input, OnInit, EventEmitter, Output } from '@angular/core';
 
 
 @Component({
@@ -10,14 +10,14 @@ export class NavbarComponent implements OnInit {
 
   searchInput = '';
 
-  @Input() emitSearchInput = new EventEmitter();
+  @Output() emitSearchInput = new EventEmitter<string>();
 
   constructor() { }
 
   ngOnInit(): void {
   }
   clickSearchInput (searchInput:any){
-this.emitSearchInput.emit (searchInput)
+this.emitSearchInput.emit(searchInput);
   }
 
 
