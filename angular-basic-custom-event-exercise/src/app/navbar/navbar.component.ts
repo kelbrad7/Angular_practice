@@ -10,7 +10,7 @@ import { FormsModule } from '@angular/forms';
 export class NavbarComponent implements OnInit {
   mySearch: string= '';
   @Output () emitUserInput = new EventEmitter<string>();
-  outputSearch: string = ''
+
 
   constructor() { }
 

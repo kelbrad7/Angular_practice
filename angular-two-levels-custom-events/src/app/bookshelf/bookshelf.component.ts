@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input, EventEmitter} from '@angular/core';
 
 @Component({
   selector: 'app-bookshelf',
@@ -6,13 +6,17 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./bookshelf.component.css']
 })
 export class BookshelfComponent implements OnInit {
-  emittedBook = ''
+
+  emittedBook: {title:string, author:string};
 
   constructor() { }
 
-  ngOnInit(): void {
+  ngOnInit() {
   }
-  assignBook (chosenBook:any) {
-  this.emittedBook = chosenBook};
+
+assignBook (chosenBook: {title:string, author: string}){
+  this.emittedBook = chosenBook;
+  console.log(this.emittedBook);
+}
 
 }

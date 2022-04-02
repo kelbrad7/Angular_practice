@@ -20,6 +20,7 @@ export class BookshelfListComponent implements OnInit {
   ]
 
   @Output() emitBook = new EventEmitter<{title:string, author:string}>();
+
   chosenBook:{title: string, author: string};
 
   constructor() { }
@@ -27,9 +28,11 @@ export class BookshelfListComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  chooseBook (chosenBook: any) {
-    this.emitBook = chosenBook;
-    console.log(chosenBook)
+  chooseBook(book:any) {
+    this.emitBook.emit(book);
+    console.log(book);
+
+
   }
   }
 
