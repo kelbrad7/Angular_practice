@@ -1,4 +1,5 @@
-<app-bookshelf-list (emitBook)="assignBook($event)"></app-bookshelf-list>
+<app-bookshelf-list (emitBook)="assignBook($event)" (click) ="emitFinalBook(emittedBook)"></app-bookshelf-list>
 
 
-<p>{{emittedBook}}</p>
+
+

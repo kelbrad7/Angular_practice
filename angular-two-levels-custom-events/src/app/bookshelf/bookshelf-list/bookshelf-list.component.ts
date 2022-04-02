@@ -11,27 +11,26 @@ export class BookshelfListComponent implements OnInit {
     author: string,
   }[] =
   [
-    {title: "book 1",
-    author: "author 1"},
-    {title: "book 2",
-    author: "author 2"},
-    {title: "book 3",
-    author: "author 3"}
+    {title: "Black Border Collie",
+    author: "Ruby"},
+    {title: "Red Border Collie",
+    author: "Maggie"},
+    {title: "Mini Aussie",
+    author: "Zoe"}
   ]
 
-  @Output() emitBook = new EventEmitter<{title:string, author:string}>();
+  @Output() emitBook = new EventEmitter<{title: string, author: string}>();
 
-  chosenBook:{title: string, author: string};
+bookTitle: string = "";
+bookAuthor: string = "";
 
   constructor() { }
 
   ngOnInit(): void {
   }
 
-  chooseBook(book:any) {
+  chooseBook(book:{title: string, author: string}) {
     this.emitBook.emit(book);
-    console.log(book);
-
 
   }
   }
